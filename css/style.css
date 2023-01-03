@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Mulish", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+section {
+  margin: 60px 0px;
+}
+:root {
+  --purple-color: #6f42c1;
+  --para-color: gray;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* Header Section Designed */
+.covid {
+  background-color: rgba(111, 66, 193, 0.1);
+  margin: 0px;
+}
+.covid__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  padding: 10px 0px;
+}
+.covid__menu > i {
+  display: block;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+}
+.covid__menu ul {
+  display: none;
+}
+.covid__logo {
+  grid-column: 1 / span 6;
+  justify-self: start;
+}
+.covid__logo a {
+  font-size: 1.75rem;
+  color: black;
+  font-weight: bold;
+}
+.covid__menu {
+  grid-column: 7 / span 6;
+  justify-self: end;
+}
+/* Slider Section Designed */
+.slider {
+  margin-top: 0;
+  background-color: rgba(111, 66, 193, 0.1);
+}
+.slider__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 50px;
+}
+.slider__single:first-child {
+  grid-column: 1 / span 12;
+  text-align: center;
+}
+.slider__single:last-child {
+  grid-column: 1 / span 12;
+}
+.slider__single span {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #b097e0;
+  margin-bottom: 10px;
+}
+.slider__single h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: var(--purple-color);
+}
+.slider__single p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: var(--para-color);
+}
+.btn {
+  border: none;
+  padding: 12px 25px;
+  background-color: #6f42c1;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.slider__single img {
+  max-width: 100%;
+}
+
+/* Statistics Section Designed */
+.section__header {
+  text-align: center;
+}
+.section__header h1 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+  color: #6f42c1;
+  font-weight: 900;
+}
+.section__header p {
+  color: var(--para-color);
+}
+.statistic__wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 40px;
+}
+.single__statistic {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 15px;
+}
+.single__statistic:first-child {
+  grid-column: 1 / span 12;
+}
+.single__statistic:nth-child(2) {
+  grid-column: 1 / span 12;
+}
+.single__statistic:last-child {
+  grid-column: 1 / span 12;
+}
+.single__statistic i {
+  font-size: 2rem;
+}
+.single__statistic h1 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.single__statistic p {
+  font-weight: bold;
+  color: var(--para-color);
+}
+/* What Is Coronavirus section designed */
+.coronavirus__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 30px;
+}
+.coronavirus__single:first-child {
+  grid-column: 1 / span 12;
+  position: relative;
+  overflow: auto;
+}
+.play {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+  background-color: var(--purple-color);
+  z-index: 1;
+  right: 0;
+  bottom: 1%;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+.coronavirus__single:last-child {
+  grid-column: 1 / span 12;
+}
+.coronavirus__single img {
+  max-width: 100%;
+  position: relative;
+}
+
+.coronavirus__single h1 {
+  font-weight: 900;
+  color: var(--purple-color);
+  margin: 20px 0px;
+}
+.coronavirus__single p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: var(--para-color);
+}
+.coronavirus__single ul {
+  margin-bottom: 40px;
+}
+.coronavirus__single ul li {
+  line-height: 2;
+  color: var(--para-color);
+}
+.coronavirus__single ul li i {
+  font-size: 0.625rem;
+  border-radius: 100%;
+  background-color: var(--purple-color);
+  color: white;
+  padding: 2px;
+}
+/* This is protection section  */
+.protection__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+}
+.single__protection i {
+  font-size: 2.5rem;
+  float: left;
+  margin-right: 15px;
+  color: var(--purple-color);
+}
+.single__protection h3 {
+  font-weight: 900;
+  color: var(--purple-color);
+}
+.single__protection p {
+  color: var(--para-color);
+}
