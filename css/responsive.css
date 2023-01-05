@@ -67,6 +67,67 @@
     grid-row-gap: 50px;
     justify-self: center;
   }
+  /* How To Prevent Coronavirus Section */
+  .prevent__wrapper--card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 40px;
+  }
+  .prevent__card:first-child {
+    grid-column: 1 / span 6;
+  }
+  .prevent__card:nth-child(2) {
+    grid-column: 7 / span 6;
+  }
+
+  .prevent__card:nth-child(3) {
+    grid-column: 1 / span 6;
+  }
+
+  .prevent__card:last-child {
+    grid-column: 7 / span 6;
+  }
+  /* This Protect Yourself Section */
+  .protect__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .single__protect:first-child {
+    grid-column: 1 / span 4;
+  }
+
+  .single__protect:nth-child(2) {
+    grid-column: 5 / span 4;
+    margin-top: 0px;
+  }
+  .single__protect:last-child {
+    grid-column: 9 / span 4;
+  }
+  .doctor__wrapper p {
+    grid-column: 1 / span 8;
+  }
+  .doctor__wrapper button {
+    grid-column: 9 / span 3;
+  }
+  /* News and article section Designed */
+  .news__wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+  }
+  .single__news:first-child {
+    grid-column: 1 / span 6;
+  }
+  .single__news:nth-child(2) {
+    grid-column: 7 / span 6;
+  }
+  .single__news:last-child {
+    grid-column: 1 / span 6;
+    position: relative;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%, -50%);
+  }
 }
 @media only screen and (min-width: 992px) {
   .container {
@@ -123,6 +184,51 @@
     grid-template-columns: repeat(4, 1fr);
     grid-row-gap: 50px;
     justify-self: center;
+  }
+  .prevent__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 50px;
+    align-items: center;
+  }
+  .prevent__wrapper--card {
+    grid-column: 1 / span 6;
+  }
+  .prevent__virus {
+    grid-column: 7 / span 6;
+  }
+  /* This is symptoms section designed */
+  .symptoms__wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 40px;
+  }
+  .symptoms__card:first-child {
+    grid-column: 1 / span 6;
+  }
+  .symptoms__card:nth-child(2) {
+    grid-column: 7 / span 6;
+  }
+  .symptoms__card:nth-child(3) {
+    grid-column: 1 / span 6;
+  }
+  .symptoms__card:last-child {
+    grid-column: 7 / span 6;
+  }
+  /* News */
+  .single__news:first-child {
+    grid-column: 1 / span 4;
+  }
+  .single__news:nth-child(2) {
+    grid-column: 5 / span 4;
+  }
+  .single__news:last-child {
+    grid-column: 9 / span 4;
+    position: relative;
+    left: 0%;
+    top: 0px;
+    transform: translateX(0%, 0%);
   }
 }
 @media only screen and (min-width: 1200px) {

@@ -186,6 +186,7 @@ section {
   font-weight: 900;
   color: var(--purple-color);
   margin: 20px 0px;
+  font-size: 1.75rem;
 }
 .coronavirus__single p {
   margin-bottom: 20px;
@@ -224,4 +225,228 @@ section {
 }
 .single__protection p {
   color: var(--para-color);
+}
+/* How To Prevent Coronavirus Section */
+.prevent {
+  background-color: #f8f5fc;
+  padding: 80px 0px;
+}
+.prevent__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 30px;
+}
+.prevent__virus {
+  grid-column: 1 / span 12;
+}
+.prevent__wrapper--card {
+  grid-column: 1 / span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 30px;
+}
+.prevent__card:first-child {
+  grid-column: 1 / span 12;
+}
+.prevent__card:nth-child(2) {
+  grid-column: 1 / span 12;
+}
+
+.prevent__card:nth-child(3) {
+  grid-column: 1 / span 12;
+}
+
+.prevent__card:last-child {
+  grid-column: 1 / span 12;
+}
+.prevent__card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  box-shadow: 0px 0px 5px 0px #ddd;
+  border-radius: 10px;
+}
+.prevent__card i {
+  display: grid;
+  grid-column: 1 / span 12;
+  font-size: 3rem;
+  background-color: #e2d9f3;
+  color: #6f42c1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 60px 0px;
+  justify-items: center;
+  align-items: center;
+}
+.prevent__card h3 {
+  grid-column: 1 / span 12;
+  padding: 20px 10px 0px 20px;
+  color: #6f42c1;
+}
+
+.prevent__card p {
+  grid-column: 1 / span 12;
+  color: var(--para-color);
+  padding: 10px 10px 40px 20px;
+}
+/* This Protect Yourself Section */
+.protect__wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.single__protect:first-child {
+  grid-column: 1 / span 12;
+}
+
+.single__protect:nth-child(2) {
+  grid-column: 1 / span 12;
+  margin-top: 20px;
+}
+.single__protect:last-child {
+  grid-column: 1 / span 12;
+}
+.coronavirus__single--change ul li {
+  line-height: 3;
+}
+
+.coronavirus__single--change ul li i {
+  background-color: #a8df65;
+  margin-right: 15px;
+}
+.coronavirus__single--change--icon ul li i {
+  background-color: transparent;
+  color: red;
+}
+.single__protect img {
+  max-width: 100%;
+}
+/* This is symptoms section designed */
+.symptoms {
+  background-color: #f8f5fc;
+  padding: 80px 0px;
+}
+.symptoms__wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 40px;
+}
+.symptoms__card:first-child {
+  grid-column: 1 / span 12;
+}
+.symptoms__card:nth-child(2) {
+  grid-column: 1 / span 12;
+}
+.symptoms__card:nth-child(3) {
+  grid-column: 1 / span 12;
+}
+.symptoms__card:last-child {
+  grid-column: 1 / span 12;
+}
+.symptoms__card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  box-shadow: 0px 0px 20px 0px #ddd;
+  padding: 20px 40px;
+  background-color: white;
+}
+.symptoms__card img {
+  max-width: 100%;
+  grid-column: 1 / span 3;
+  padding-right: 20px;
+}
+.symptoms__desc {
+  grid-column: 4 / -1;
+}
+.symptoms__desc h3 {
+  color: var(--purple-color);
+  padding-bottom: 10px;
+}
+.symptoms__desc p {
+  text-align: justify;
+  line-height: 1.5;
+  color: var(--para-color);
+}
+.doctor__location {
+  width: 80%;
+  margin: 0 auto;
+}
+.doctor__wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.doctor__wrapper p {
+  grid-column: 1 / span 12;
+  color: var(--para-color);
+}
+.doctor__wrapper p span {
+  color: var(--purple-color);
+  font-weight: bold;
+  text-align: justify;
+}
+.doctor__wrapper button {
+  grid-column: 1 / span 6;
+  margin-top: 20px;
+}
+/* News and article section Designed */
+.news__wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-row-gap: 40px;
+}
+.single__news:first-child {
+  grid-column: 1 / span 12;
+}
+.single__news:nth-child(2) {
+  grid-column: 1 / span 12;
+}
+.single__news:last-child {
+  grid-column: 1 / span 12;
+}
+.news__img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.news__img img {
+  max-width: 100%;
+}
+.news__img::before {
+  content: "30 JUL, 2020";
+  position: absolute;
+  z-index: 1;
+  background-color: #6f42c1;
+  padding: 8px 20px;
+  color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0%;
+}
+.news__data {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.admin {
+  grid-column: 1 / span 6;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--para-color);
+  cursor: pointer;
+}
+.comments {
+  grid-column: 7 / span 6;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--para-color);
+  cursor: pointer;
+}
+.single__news h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: #6f42c1;
 }
