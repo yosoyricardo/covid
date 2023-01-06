@@ -230,6 +230,27 @@
     top: 0px;
     transform: translateX(0%, 0%);
   }
+  /* This is footer section start */
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 50px;
+  }
+  .single__footer:first-child {
+    grid-column: 1 / span 3;
+  }
+  .single__footer:nth-child(2) {
+    grid-column: 4 / span 3;
+  }
+  .single__footer:nth-child(3) {
+    grid-column: 7 / span 3;
+  }
+  .single__footer:last-child {
+    grid-column: 10 / span 3;
+  }
+  .social__icon {
+    width: 80%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .container {
